@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #ade9fe;
+  min-height: 100vh;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+.Logo {
+  color: #112436;
+  font-weight: 700;
+  font-size: 2em;
+  text-decoration: none;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.navigation li {
+  list-style: none;
+}
+
+.navigation li a {
+  text-decoration: none;
+  padding: 6px 15px;
+  color: #112436;
+  border-radius: 20px;
+}
+
+.navigation li a:hover,
+.navigation li a.active {
+  background: #112436;
+  color: #fff;
+}
+
+.blog-section
+{
+    background-color: #ade9fe;
+    margin-top: 100px;
+}
+
+.blog-section h2
+{
+    position: relative;
+
+    font-size: 3em;
+    color: #112436;
+    justify-content: center;
+    text-align: center;
+}
+
+.column 
+{
+    break-inside: avoid-column;
+    padding-top: 10px;
+}
+
+.column img 
+{
+    display: block;
+    max-width: 100%; /* Scale image down to fit column width */
+    height: auto;
+    margin: 30px auto;
+    margin-bottom: 10px; /* Optional: Add some spacing below the image */
+}
+
+.content
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.blog-container 
+{
+    align-items: flex-start;
+    position: relative;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+    background-color: #ade9fe;
+    column-count: 2;
+    column-gap: 80px;
+}
+
+footer 
+{
+    background-color: ade9fe;
+    color: #112436;
+    padding: 20 px;
+    padding-top: 80px;
+    text-align: center;
+}
+
+.footer-content
+{
+    max-width: 800px;
+    margin: 0 auto;
+}
