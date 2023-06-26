@@ -77,8 +77,7 @@ header {
 #text
 {
     position: absolute;
-    top: 50%;
-    transform: translateY(-350%);
+    top: 15%;
     font-size: 4em;
     color: #112436;
 }
