@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parallax Scrolling Website</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+    <header>
+        <a href="#" class="Logo">Logo</a>
+
+        <ul class="navigation">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="suggestions.html">Suggestions</a></li>
+        </ul>
+
+    </header>
+      
+
+    <section class="parallax">
+        <img src="/backgroundimgs/sky.png" id="s1">
+        <img src="/backgroundimgs/cloud.png" id="c1">
+        <img src="/backgroundimgs/grass.png" id="g1">
+        <img src="/backgroundimgs/tree1.png" id="t2">
+        <img src="/backgroundimgs/tree2.png" id="t1">
+        <img src="/backgroundimgs/temple.png" id="tm1">
+        <h2 id="text"> Welcome Sahajanandi Youth</h2>
+        <img src="/backgroundimgs/grass2.png" id="g2">
+    </section>
+    <section class="sec">
+        <div class="content">
+            <h2>Our Latest Video</h2>
+            <p>The third installment into the Life of Lord Swaminarayan video series, where Muktanand Swami is in deep conversation with Neelkanthvarni. Understanding that the being that stands before him is not one of this world, Muktanand Swami employs the teachings of his guru, Ramanand Swami, to answer the questions that are asked to him.</p>
+        </div>
+        <div class="video-container">
+            <div class="video-wrapper">
+                <iframe src="https://youtube.com/embed/nB3v0owtb6w" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+        
+
+    </section>
+
+    <section class="three-column-sec">
+        <div class="column">
+          <img src="/menuimg/reading.jpeg" alt="Image 1">
+          <h2>Blog</h2>
+        </div>
+        <div class="column">
+          <img src="/menuimg/resources.jpg" alt="Image 2">
+          <h2>Resources</h2>
+        </div>
+        <div class="column">
+          <img src="/menuimg/suggestions.jpg" alt="Image 3">
+          <h2>Suggestions?</h2>
+        </div>
+    </section>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/ScrollTrigger.min.js"></script>
+    <script>
+        
+        gsap.from("#t1", {
+            scrollTrigger : {
+                scrub: true
+            }, 
+            y: 25, 
+        })
+        gsap.from("#t2", {
+            scrollTrigger : {
+                scrub: true
+            }, 
+            y: 25, 
+        })
+        gsap.from("#tm1", {
+            scrollTrigger : {
+                scrub: true
+            }, 
+            y: -25, 
+        })
+
+    </script>
+
+    <footer>
+        <div class="footer-content">
+            <p>Jay Swaminarayan!</p>
+        </div>
+    </footer>
+
+</body>
+</html>
