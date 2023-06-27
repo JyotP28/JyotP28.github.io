@@ -10,6 +10,7 @@
 body {
   background: #ade9fe;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 header {
@@ -121,3 +122,103 @@ footer
     max-width: 800px;
     margin: 0 auto;
 }
+
+
+
+/* Media Queries for smaller screens */
+@media (max-width: 1170px) {
+    header {
+      padding: 20px 10px; /* Adjust the padding for smaller screens */
+      flex-direction: column; /* Change from row to column */
+      align-items: center; /* Center-align the items horizontally */
+      text-align: center; /* Center-align the text */
+    }
+  
+    .Logo {
+      font-size: 2em; /* Adjust the font size for smaller screens */
+      margin-bottom: 20px;
+    }
+  
+    .navigation {
+        position: relative;
+        top: unset;
+        right: 0;
+        width: auto;
+        max-height: none;
+        overflow: hidden;
+        background-color: transparent;
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+
+        
+    .navigation li {
+        margin: 5px 0;
+    }
+    
+    .navigation ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navigation li a {
+        text-decoration: none;
+        padding: 6px 15px;
+        color: #112436;
+        border-radius: 20px;
+    }
+
+
+    .parallax {
+        height: auto;
+        padding: 200px 0;
+        text-align: center;
+        margin-top: 250px;
+    }
+
+    #text {
+      font-size: 2em; /* Adjust the font size for smaller screens */
+      position: absolute;
+      text-align: center;
+      top: 1;
+    }
+
+    .navigation li:hover a,
+    .navigation li:active a {
+        background: #112436;
+        color: #fff;
+    }
+
+    .blog-section h2
+{
+    position: relative;
+    padding-top: 170px;
+    font-size: 3em;
+    color: #112436;
+    justify-content: center;
+    text-align: center;
+}
+
+
+    .blog-container 
+    {
+        align-items: flex-start;
+        position: relative;
+        padding-left: 100px;
+        padding-right: 100px;
+        padding-top: 50px;
+        background-color: #ade9fe;
+        column-count: 1;
+        column-gap: 80px;
+    }
+
+
+
+    }
