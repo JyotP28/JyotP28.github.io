@@ -11,6 +11,7 @@
 <body>
     <header>
         <a href="#" class="Logo">Logo</a>
+
         <ul class="navigation">
           <li><a href="#" class="active">Home</a></li>
           <li><a href="blog.html">Blog</a></li>
@@ -27,8 +28,8 @@
         <img src="/backgroundimgs/grass.png" id="g1">
         <img src="/backgroundimgs/tree1.png" id="t2">
         <img src="/backgroundimgs/tree2.png" id="t1">
-        <h2 id="text"> Welcome Sahajanandi Youth</h2>
         <img src="/backgroundimgs/temple.png" id="tm1">
+        <h2 id="text"> Welcome Sahajanandi Youth</h2>
         <img src="/backgroundimgs/grass2.png" id="g2">
     </section>
     <section class="sec">
@@ -70,34 +71,23 @@
             scrollTrigger : {
                 scrub: true
             }, 
-            y: 50, 
+            y: 25, 
         })
         gsap.from("#t2", {
             scrollTrigger : {
                 scrub: true
             }, 
-            y: 50, 
+            y: 25, 
         })
         gsap.from("#tm1", {
             scrollTrigger : {
                 scrub: true
             }, 
-            y: 50, 
+            y: -25, 
         })
 
     </script>
 
-
-    <script>
-        const menuIcon = document.querySelector('.menu-icon');
-        const navigation = document.querySelector('.navigation');
-
-        menuIcon.addEventListener('click', () => {
-        navigation.classList.toggle('active');
-        });
-
-    </script>
-    
     <footer>
         <div class="footer-content">
             <p>Jay Swaminarayan!</p>
